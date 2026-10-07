@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "fixture_kind": "synthetic-nonfunctional",
+  "created_date": "2026-10-07",
+  "validation_scope": "offline detector only; no network credential verification",
+  "github_end_to_end_passed": false,
+  "distinct_synthetic_credential_values": 9,
+  "expected_offline_rule_findings": 10,
+  "duplicate_note": "One MySQL value matches both mysql_env_password and mysql_config_password.",
+  "expected_files": [
+    {
+      "file": ".env",
+      "findings": 4,
+      "rule_ids": [
+        "aws_access_key_id",
+        "aws_secret_access_key",
+        "mysql_config_password",
+        "mysql_env_password"
+      ],
+      "suppression_count": 0
+    },
+    {
+      "file": "config/aliyun/.env",
+      "findings": 2,
+      "rule_ids": [
+        "aliyun_access_key_id",
+        "aliyun_access_key_secret"
+      ],
+      "suppression_count": 0
+    },
+    {
+      "file": "config/tencent/.env",
+      "findings": 2,
+      "rule_ids": [
+        "tencent_secret_id",
+        "tencent_secret_key"
+      ],
+      "suppression_count": 0
+    },
+    {
+      "file": "config/huawei/.env",
+      "findings": 2,
+      "rule_ids": [
+        "huawei_access_key",
+        "huawei_secret_key"
+      ],
+      "suppression_count": 0
+    },
+    {
+      "file": "config/normal.env",
+      "findings": 0,
+      "rule_ids": [],
+      "suppression_count": 0
+    }
+  ]
+}
