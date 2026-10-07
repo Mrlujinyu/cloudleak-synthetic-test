@@ -1,0 +1,16 @@
+# Keep the synthetic .env fixtures tracked deliberately.
+# Do not copy any real credentials or local runtime data into this repository.
+.env.local
+.env.production
+*.pem
+*.key
+*.p12
+*.pfx
+*.db
+*.sqlite*
+*.sql
+runtime.env
+credentials.json
+node_modules/
+.venv/
+__pycache__/
